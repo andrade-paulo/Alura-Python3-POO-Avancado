@@ -49,15 +49,8 @@ class Playlist():
     def __len__(self): # Define o resultado para um len(objeto)
         return len(self._programas)
 
-    @property
-    def listagem(self):
-        return self._programas
-    
-    @property
-    def tamanho(self):
-        return len(self._programas)
-
 # Objetos
+
 vingadores = Filme('vingadores - guerra infinita', 2018, 160)
 atlanta = Serie('atlanta', 2018, 2)
 tmep = Filme('todo mundo em panico', 1999, 100)
@@ -67,6 +60,7 @@ playlist = [vingadores, atlanta, tmep, demolidor]
 pl_fim_de_semana = Playlist("Final de Semana", playlist)
 
 # Likes
+
 for i in range(0, 3):
     vingadores.dar_like()
 
